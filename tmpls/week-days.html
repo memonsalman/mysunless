@@ -1,0 +1,19 @@
+<% _.each(events, function(event){ %>
+
+<div class="cal-row-fluid">
+
+	
+	<div class="<%= event['class'] %>-div week-cell cal-cell<%= event.days%> cal-offset<%= event.start_day %> day-highlight dh-<%= event['class'] %>" data-event-class="<%= event['class'] %>">
+		<i class="fa fa-sort-desc more_week_event show-mob" aria-hidden="true" title="Show More"></i> 
+		<div class="week-cell-event hidden-mob <%= event['class'] %>-div">
+			<span class="pull-left event-l <%= event['class'] %>"> </span>
+
+			<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"  data-toggle="tooltip" title="<%= event.title %> - <%= event.clientname %>" class="<%= event['class'] %>-text cal-event-week event<%= event.id %> evnetlistdid" data-clientname="<%= event.clientname %>" data-username="<%= event.username %>" data-title="<%= event.title %>" data-full_date="<%= event.full_date %>" data-startime="<%= event.stime %>" data-estatus="<%= event.class %>" data-eventurl="<%= event.url ? event.url : 'javascript:void(0)' %>" data-viewclient="<%= event.viewcustomerurl ? event.viewcustomerurl : 'javascript:void(0)' %>" data-location="<%= event.evnetloction %>" data-deletevent="<%= event.Deleteurl ? event.Deleteurl : 'javascript:void(0)' %>" data-eventadders="<%= event.eventadders %>" data-onlyeventadders="<%= event.onlyeventadders %>" data-myeventid="<%= event.id %>" data-chekout="<%= event.chekouturl ? event.chekouturl : 'javascript:void(0)' %>" data-sercivename="<%= event.ServiceName %>" data-ServiceProvider="<%= event.ServiceProvider %>" data-stime="<%= event.stime %>" data-providerimg="<%= event.providerimg %>" data-customerimg="<%= event.customerimg %>" data-clientID="<%= event.clientID %>" ><%= event.onlystime %> | <%= event.title %> - <%= event.clientname %> @ <%= event.start_hour %> - <%= event.end_hour %> </a>
+
+		</div>
+	</div>
+
+</div>
+
+<% }); %>
+

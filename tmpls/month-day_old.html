@@ -1,0 +1,56 @@
+<div class="cal-month-day <%= cls %>" data-id="<%= data_day %>">
+
+	<span class="pull-right" data-cal-date="<%= data_day %>" data-cal-view="day"  title="<%= tooltip %>"><%= day %></span>
+
+	<% if (events.length > 0) { %>
+		<!-- <i class="fa fa-sort-desc more_event" aria-hidden="true" title="Show More"></i>  -->
+		<span class="more_event" title="Show More"><%= events.length %></span>
+		<div class="events-list-div" data-cal-start="<%= start %>" data-cal-end="<%= end %>">
+			<% if (events.length > 1) { %>
+
+				<% _.each(events, function(event) { %>
+
+					<a href="javascript:void(0)"  data-event-id="<%= event.id %>" data-event-class="<%= event['class'] %>" 
+
+						title="<%= event.title %>">
+
+						<span class="pull-left event <%= event['class'] %>"> </span>
+
+						<span id="cal-title-on-day" class="evnetlistdid" data-clientname="<%= event.clientname %>" data-clientID="<%= event.clientID %>" data-username="<%= event.username %>" data-title="<%= event.title %>" data-full_date="<%= event.full_date %>" data-startime="<%= event.stime %>" data-estatus="<%= event.class %>" data-eventurl="<%= event.url ? event.url : 'javascript:void(0)' %>" data-viewclient="<%= event.viewcustomerurl ? event.viewcustomerurl : 'javascript:void(0)' %>" data-location="<%= event.evnetloction %>" data-deletevent="<%= event.Deleteurl ? event.Deleteurl : 'javascript:void(0)' %>" data-eventadders="<%= event.eventadders %>" data-onlyeventadders="<%= event.onlyeventadders %>" data-myeventid="<%= event.id %>" data-chekout="<%= event.chekouturl ? event.chekouturl : 'javascript:void(0)' %>" data-sercivename="<%= event.ServiceName %>" data-ServiceProvider="<%= event.ServiceProvider %>" data-stime="<%= event.stime %>"  data-providerimg="<%= event.providerimg %>" data-customerimg="<%= event.customerimg %>" ><%= event.title %> - <%= event.clientname %> @ <%= event.etime %> </span>
+
+					</a>
+
+					<div class="divider"></div>
+				
+				<% }); %>
+
+				<!-- <span class="label label-success" style="padding:10px 15px;border-radius:50%;margin-top: 20%;margin-left: 35%;"><%= events.length %></span>	 -->
+
+			<% }else{ %>
+
+				<% _.each(events, function(event) { %>
+
+					<a href="javascript:void(0)"  data-event-id="<%= event.id %>" data-event-class="<%= event['class'] %>" 
+
+						title="<%= event.title %>">
+
+						<span class="pull-left event <%= event['class'] %>"> </span>
+
+						<span id="cal-title-on-day" class="evnetlistdid" data-clientname="<%= event.clientname %>" data-clientID="<%= event.clientID %>" data-username="<%= event.username %>" data-title="<%= event.title %>" data-full_date="<%= event.full_date %>" data-startime="<%= event.stime %>" data-estatus="<%= event.class %>" data-eventurl="<%= event.url ? event.url : 'javascript:void(0)' %>" data-viewclient="<%= event.viewcustomerurl ? event.viewcustomerurl : 'javascript:void(0)' %>" data-location="<%= event.evnetloction %>" data-deletevent="<%= event.Deleteurl ? event.Deleteurl : 'javascript:void(0)' %>" data-eventadders="<%= event.eventadders %>" data-onlyeventadders="<%= event.onlyeventadders %>" data-myeventid="<%= event.id %>" data-chekout="<%= event.chekouturl ? event.chekouturl : 'javascript:void(0)' %>" data-sercivename="<%= event.ServiceName %>" data-ServiceProvider="<%= event.ServiceProvider %>" data-stime="<%= event.stime %>"  data-providerimg="<%= event.providerimg %>" data-customerimg="<%= event.customerimg %>" ><%= event.title %> - <%= event.clientname %> @ <%= event.etime %> </span>
+
+					</a>
+
+					<!-- <br> -->
+				
+				<% }); %>
+
+			<% } %>	
+			
+		</div>
+
+	<% } %>
+
+</div>
+
+
+
