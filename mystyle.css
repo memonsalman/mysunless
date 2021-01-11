@@ -1,0 +1,52 @@
+@font-face{font-family:'proxima_nova_altblack';src:url('fonts/Mark Simonson - Proxima Nova Alt Black-webfont.eot');src:url('fonts/Mark Simonson - Proxima Nova Alt Black-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/Mark Simonson - Proxima Nova Alt Black-webfont.woff2') format('woff2'),
+url('fonts/Mark Simonson - Proxima Nova Alt Black-webfont.woff') format('woff'),
+url('fonts/Mark Simonson - Proxima Nova Alt Black-webfont.ttf') format('truetype'),
+url('fonts/Mark Simonson - Proxima Nova Alt Black-webfont.svg#proxima_nova_altblack') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'proxima_nova_altbold';src:url('fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.eot');src:url('fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.woff2') format('woff2'),
+url('fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.woff') format('woff'),
+url('fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.ttf') format('truetype'),
+url('fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.svg#proxima_nova_altbold') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Proxima Nova';src:url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');src:url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+/*url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),*/
+url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
+url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'proxima_nova_scosfthin';src:url('fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.eot');src:url('fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.woff2') format('woff2'),
+url('fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.woff') format('woff'),
+url('fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.ttf') format('truetype'),
+url('fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.svg#proxima_nova_scosfthin') format('svg');font-weight:normal;font-style:normal;}
+.error{color:red;}
+body{font-family:Proxima Nova !important;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .sidebar-nav ul li a{font-family:Poppins,sans-serif !important;}
+.sidebar-nav ul li a{color:#000 !important;}
+button.btn.btn-info.d-none.d-lg-block.m-l-15{background:#d04f5b;border-color:#d04f5b;}
+button.btn.btn-info.btn-lg.btn-block.text-uppercase.waves-effect.waves-light{background:#68c1e2;border-color:#3aa5db;}
+b, strong{font-weight:bolder;color:#0b59a2;}
+.bgimg_text{position:absolute;color:white;width:800px;text-align:justify;left:9%;top:5%;}
+a.btn.wysihtml5-command-active{background:#53a2df!important;}
+.form-material .form-control, .form-material .form-control.focus, .form-material .form-control:focus{background-image:linear-gradient(#68c1e2,#68c1e2),linear-gradient(#e9ecef,#e9ecef)!important;}
+.jq-toast-loader{background:#68c1e2!important;}
+button.btn.btn-info.btn-lg.btn-block.text-uppercase.btn-rounded.myclassbtn{background:#68c1e2;border-color:#3aa5db;padding:.5rem 1rem;border-radius:.3rem;}
+b, strong{font-weight:bolder;color:#0b59a2;}
+.myclassbtn a , .myclassbtn a:hover{color:white;}
+form#loginform img{width:100%;}
+.skin-default .topbar{background:transparent !important;}
+.navbar-collapse{background:#181818;}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before, .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before{background-color:#68c1e2 !important;}
+.custom-control-input:checked~.custom-control-label::before{color:#fff;background-color:#68c1e2 !important;}
+@media only screen and (max-width:1024px){.bgimg_text{position:absolute;color:white;width:500px;text-align:justify;left:5%;top:10%;}
+}
+@media only screen and (max-width:768px){.bgimg_text{position:absolute;color:white;width:350px;text-align:justify;left:1%;top:9%;padding:23px;}
+}
+@media only screen and (max-width:414px){.bgimg_text{padding:23px;position:initial;color:white;width:auto;text-align:justify;left:9%;top:30%;}
+}
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);.login-register{background-size:cover;background-repeat:no-repeat;background-position:center center;height:100%;width:100%;padding:10% 0;position:fixed;}
+.login-box{width:400px;margin:0 auto;}
+.login-box .footer{width:100%;left:0px;right:0px;}
+.login-box .social{display:block;margin-bottom:30px;}
+#recoverform{display:none;}
+.login-sidebar{padding:0px;margin-top:0px;}
+.login-sidebar .login-box{right:0px;position:absolute;height:100%;}

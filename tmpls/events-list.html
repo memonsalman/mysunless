@@ -1,0 +1,66 @@
+<span id="cal-slide-tick" style="display: none"></span>
+
+<div id="cal-slide-content" class="cal-event-list">
+
+	<ul class="unstyled list-unstyled">
+
+		<% _.each(events, function(event) { %>
+
+			<li> Client: <%= event.clientname %> </li>
+			<li>
+
+				<!-- <span class="pull-left event <%= event['class'] %>"></span>&nbsp;
+
+				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
+
+					data-event-class="<%= event['class'] %>" class="event-item"> -->
+
+					Service: <%= event.title %><!-- </a> -->
+
+			</li>
+
+			<li>
+
+				Start Time: <%= event.stime %>
+
+			</li>
+
+
+			<li>
+
+				Employee: <%= event.username %>
+
+			</li>
+
+				<li style="padding: 5px 0;">	
+				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" name="ViewEvent" id="ViewEvent" class="btn btn-info">Edit Appointment </a>
+				</li>	
+				
+				<li style="padding: 5px 0;">
+				<a href="<%= event.Deleteurl ? event.Deleteurl : 'javascript:void(0)' %>" name="DeleteEvent" data-event-id="<%= event.id %>" id="DeleteEvent" class="btn btn-danger">Delete Appointment </a>
+			</li>
+
+			<li style="padding: 5px 0;">
+				<a href="<%= event.viewcustomerurl ? event.viewcustomerurl : 'javascript:void(0)' %>" name="ViewCustomer" data-event-id="<%= event.cid %>" id="ViewCustomer" class="btn btn-success">View Cutomer Profile </a>
+			</li>
+
+			<li style="padding: 5px 0;">
+				<button type="button" class="btn btn-warning cusomerlocation" id="cusomerlocation" data-id='' style="color: black;"> Directions to Appointment </button>
+			</li>	
+
+			
+
+			
+
+		<% }) %>
+
+
+
+		
+
+	</ul>
+
+	
+
+</div>
+
